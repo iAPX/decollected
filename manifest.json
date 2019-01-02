@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Decollected",
+  "description": "Decollect your data - Decollected.com",
+  "version": "0.0",
+  "author": "Philippe Vigier - Decollected.com",
+  "icons": { "128": "decollected-icon.png" },
+
+  "browser_action": {
+    "default_icon": "decollected-icon.png",
+    "default_title": "Decollect your data",
+    "default_popup": "popup.html"    
+  },
+
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+
+}
+
